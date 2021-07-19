@@ -5,6 +5,7 @@ on:
 jobs:
   BuildUnsigned:
     runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
