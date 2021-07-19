@@ -24,7 +24,7 @@ jobs:
       - name: Setup Cmake & Ninja
         uses: lukka/get-cmake@latest
       - name: Build
-        run: ./gradlew --no-daemon app:assembleRelease
+        run: ./gradlew app:assembleFossRelease
       - name: Archive code coverage results
         uses: actions/upload-artifact@v2
         with:
